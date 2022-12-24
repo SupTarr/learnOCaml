@@ -7,9 +7,9 @@ type intlist =
 
 let rec length_intlist = function
   | Nil -> 0
-  | Cons (_, t) -> 1 + lenght_intlist t
+  | Cons (_, t) -> 1 + length_intlist t
 
-(* lenght_intlist (Cons (1, Cons (2, Nil))) *)
+(* length_intlist (Cons (1, Cons (2, Nil))) *)
 
 (* Parameterized Variants *)
 type 'a mylist =
